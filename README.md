@@ -1,64 +1,96 @@
-# 🌱 Smart Irrigation System – Week 1
+# 🌾 Smart Irrigation System using Machine Learning
 
-This project is the first step towards building an intelligent irrigation system using Machine Learning. It involves data preprocessing, feature analysis, and training a multi-output classifier to predict which parcels of land require irrigation based on sensor data.
-
-## 📁 Project Structure
-
-* `Irrigation_System.ipynb` – Jupyter Notebook containing the full data loading, preprocessing, training, and evaluation pipeline.
-* `irrigation_machine.csv` – Dataset used, containing sensor values and parcel irrigation labels.
-
-## 🧠 Objective
-
-Develop a predictive model that takes in environmental sensor readings and accurately determines the irrigation needs (binary output) for three parcels of agricultural land.
-
-## 📊 Dataset
-
-* **Size:** 2000 rows × 23 columns
-* **Inputs:** 20 sensor readings (`sensor_0` to `sensor_19`)
-* **Outputs:** 3 binary labels (`parcel_0`, `parcel_1`, `parcel_2`) representing irrigation status (1 = irrigate, 0 = do not irrigate)
-
-## 🔧 Technologies Used
-
-* Python
-* Pandas, Matplotlib, Seaborn
-* Scikit-learn (RandomForest, MultiOutputClassifier)
-* Joblib (for model saving)
-
-## 🔍 Workflow Summary
-
-1. **Data Preprocessing**
-
-   * Removed unnecessary index column
-   * Visualized distribution and correlation between features
-   * Scaled data using `MinMaxScaler`
-2. **Model Training**
-
-   * Used `RandomForestClassifier` wrapped in `MultiOutputClassifier` to handle multiple labels
-   * Performed train-test split (default 80-20)
-3. **Evaluation**
-
-   * Used `classification_report` to evaluate model performance on each parcel
-
-## 📈 Results
-
-The model outputs a separate prediction for each parcel. Each label is evaluated using precision, recall, and F1-score metrics.
-
-## 💾 Model Export
-
-The trained model can be saved and reloaded using `joblib`, enabling deployment for real-time inference in smart irrigation systems.
+A multi-stage machine learning project to build a smart irrigation system using environmental sensor data to predict the irrigation needs of different land parcels.
 
 ---
 
-## 🚀 Future Scope
-
-* Integrate real-time sensor inputs from IoT devices
-* Deploy the model in embedded systems for automated irrigation
-* Add temporal analysis (seasonal trends, time-series modeling)
+## 📋 Table of Contents
+- [📌 Project Overview](#-project-overview)
+- [📅 Week-wise Work Summary](#-week-wise-work-summary)
+  - [✅ Week 1: Data Preprocessing and Random Forest Modeling](#week-1-data-preprocessing-and-random-forest-modeling)
+  - [✅ Week 2: Model Evaluation and Visualization](#week-2-model-evaluation-and-visualization)
+  - [🔜 Future Work](#-future-work)
+- [🧠 Why Random Forest?](#-why-random-forest)
+- [🖼️ Sample Outputs](#-sample-outputs)
+- [📂 Colab Link](#-colab-link)
+- [🙏 Acknowledgement](#-acknowledgement)
 
 ---
 
-## 🙋‍♀️ Author
+## 📌 Project Overview
 
-**Shaili Sahu**
-Final Year ECE Student, Amrita Vishwa Vidyapeetham – Bengaluru
-🌐 GitHub: [shailisahu283](https://github.com/shailisahu283)
+This project aims to assist farmers in automating irrigation decisions using sensor data. By analyzing real-time sensor inputs, the model predicts whether three separate land parcels need irrigation.
+
+---
+
+## 📅 Week-wise Work Summary
+
+### ✅ Week 1: Data Preprocessing and Random Forest Modeling
+- Imported and cleaned the dataset (`irrigation_machine.csv`)
+- Removed unnecessary columns and handled basic EDA
+- Split data into **features** (`sensor_0` to `sensor_19`) and **targets** (`parcel_0`, `parcel_1`, `parcel_2`)
+- Normalized data using `MinMaxScaler`
+- Trained a **MultiOutput Random Forest Classifier**
+- Saved the trained model and scaler for future inference
+
+### ✅ Week 2: Model Evaluation and Visualization
+- Evaluated the model using `classification_report` (precision, recall, F1-score)
+- Visualized feature importance
+- Visualized decision tree structure (shallow level)
+- Explored dataset statistics and distribution
+- Gained insights into which sensors most affect irrigation decisions
+
+### 🔜 Future Work
+- Integrate with **real-time IoT sensors**
+- Add **time-series analysis** using LSTM or other temporal models
+- Build a web dashboard or embedded interface for end-users
+- Deploy model on microcontrollers (e.g., Raspberry Pi or Arduino with ML support)
+
+---
+
+## 🧠 Why Random Forest?
+
+- Handles **non-linear interactions** between sensor inputs
+- Supports **multi-label output** using `MultiOutputClassifier`
+- **Robust to noise** and missing data
+- **No heavy preprocessing** required
+- Provides **feature importance insights**
+- Easily tunable and scalable
+
+---
+
+## 🖼️ Sample Outputs
+
+### 📊 Week 1 – Data Summary & Head
+
+![Week 1 - Data Sample](<img width="851" height="1240" alt="image" src="https://github.com/user-attachments/assets/4210c5e7-c528-41e6-b753-5a86bed6094d" />)
+
+---
+
+### 🌳 Week 2 – Model Evaluation and Feature Importance
+
+![Week 2 - Evaluation](<img width="1238" height="470" alt="image" src="https://github.com/user-attachments/assets/6834e572-efc0-4875-bd07-40703be1508c" />)
+
+![Week 2 - Feature Importance](<img width="603" height="432" alt="image" src="https://github.com/user-attachments/assets/6006ea2d-41ab-4181-b403-bb06fc9479dd" />)
+
+![Week 2 - Model](<img width="1570" height="790" alt="image" src="https://github.com/user-attachments/assets/ff994114-0dc8-4147-b1eb-35dea303bfc1" />)
+
+---
+
+## 📂 Colab Link
+
+Access and run the project in Google Colab:  
+🔗 [Colab Notebook](https://colab.research.google.com/drive/1i6CyUwJkXKdB2QUDS79csBs9P9zMyLM4?usp=sharing)
+
+---
+
+## 🙏 Acknowledgement
+
+This project was developed as part of a machine learning internship.  
+Special thanks to mentors, peers, and the organizing institution for guidance and support.
+
+---
+
+**Author**: *Shaili Sahu*  
+Final Year ECE Student, Amrita Vishwa Vidyapeetham – Bengaluru  
+GitHub: [shailisahu283](https://github.com/shailisahu283)
