@@ -63,7 +63,7 @@ This project aims to assist farmers in automating irrigation decisions using sen
 
 ### 📊 Week 1 – Data Summary & Head
 
-![Week 1 - Data Sample](<img width="851" height="1240" alt="image" src="https://github.com/user-attachments/assets/4210c5e7-c528-41e6-b753-5a86bed6094d" />)
+![Week 1 - Data Sample](<img width="1238" height="470" alt="Image" src="https://github.com/user-attachments/assets/af580e56-5c49-489b-9c20-f3ca095f9f9a" />)
 
 ---
 
@@ -71,9 +71,9 @@ This project aims to assist farmers in automating irrigation decisions using sen
 
 ![Week 2 - Evaluation](<img width="1238" height="470" alt="image" src="https://github.com/user-attachments/assets/6834e572-efc0-4875-bd07-40703be1508c" />)
 
-![Week 2 - Feature Importance](<img width="603" height="432" alt="image" src="https://github.com/user-attachments/assets/6006ea2d-41ab-4181-b403-bb06fc9479dd" />)
+![Week 2 - Feature Importance](<img width="603" height="432" alt="Image" src="https://github.com/user-attachments/assets/badf10f6-0ceb-486a-b919-133b8f33ae3b" />)
 
-![Week 2 - Model](<img width="1570" height="790" alt="image" src="https://github.com/user-attachments/assets/ff994114-0dc8-4147-b1eb-35dea303bfc1" />)
+![Week 2 - Model](<img width="1570" height="790" alt="Image" src="https://github.com/user-attachments/assets/a41787ab-d846-4fb1-9583-5fe8703fe542" />)
 
 ---
 
