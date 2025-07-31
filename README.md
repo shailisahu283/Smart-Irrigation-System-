@@ -9,6 +9,7 @@ A multi-stage machine learning project to build a smart irrigation system using 
 - [📅 Week-wise Work Summary](#-week-wise-work-summary)
   - [✅ Week 1: Data Preprocessing and Random Forest Modeling](#week-1-data-preprocessing-and-random-forest-modeling)
   - [✅ Week 2: Model Evaluation and Visualization](#week-2-model-evaluation-and-visualization)
+  - [✅ Week 3: Interactive App in Google Colab](#week-3-Interactive-App-in-Google-Colab)
   - [🔜 Future Work](#-future-work)
 - [🧠 Why Random Forest?](#-why-random-forest)
 - [🖼️ Sample Outputs](#-sample-outputs)
@@ -39,6 +40,13 @@ This project aims to assist farmers in automating irrigation decisions using sen
 - Visualized decision tree structure (shallow level)
 - Explored dataset statistics and distribution
 - Gained insights into which sensors most affect irrigation decisions
+
+### ✅ Week 3: Interactive App in Google Colab
+- Built an interactive frontend using `ipywidgets` in Google Colab
+- Created 20 sliders for scaled sensor input (range 0 to 1)
+- Loaded the trained Random Forest model (`Farm_Irrigation_System.pkl`)
+- Displayed prediction results for each parcel as ON/OFF
+- Designed the interface for intuitive user control and testing
 
 ### 🔜 Future Work
 - Integrate with **real-time IoT sensors**
@@ -81,6 +89,12 @@ This project aims to assist farmers in automating irrigation decisions using sen
 
 Access and run the project in Google Colab:  
 🔗 [Colab Notebook](https://colab.research.google.com/drive/1i6CyUwJkXKdB2QUDS79csBs9P9zMyLM4?usp=sharing)
+
+## 📲 Week 3 – Colab App
+
+Run the interactive irrigation prediction app (with sliders) here:  
+🔗 [Week 3 – Colab Interactive App](https://colab.research.google.com/drive/1kCgb5MZCXwlRNGajcTfaU3fHhcCWUWyN?usp=sharing)
+
 
 ---
 
