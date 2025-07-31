@@ -88,7 +88,7 @@ This project aims to assist farmers in automating irrigation decisions using sen
 ## 📂 Colab Link
 
 Access and run the project in Google Colab:  
-🔗 [Colab Notebook](https://colab.research.google.com/drive/1i6CyUwJkXKdB2QUDS79csBs9P9zMyLM4?usp=sharing)
+🔗 [Model Training Notebook (Week 1 & 2)](https://colab.research.google.com/drive/1i6CyUwJkXKdB2QUDS79csBs9P9zMyLM4?usp=sharing)
 
 ## 📲 Week 3 – Colab App
 
